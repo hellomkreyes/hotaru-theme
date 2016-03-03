@@ -6,10 +6,38 @@ a {
 	}
 }
 
+/* headings */
+// h1 {
+// 	@include sansSerif();	
+// }
+
+// h2 {
+// 	@include serif();
+// }
+
+// h3 {
+// 	@include sansSerif();
+// }
+
+// h4 {
+// 	@include sansSerif();
+// }
+
+// h5 {
+// 	@include sansSerif();
+// }
+
+// h6 {
+// 	@include sansSerif();
+// }
+
 /* paragraphs */
 
 p {
 	line-height: 1.5;
+	color:;//white
+	font-family:;//playfair display
+	font-size:;//12-13pt
 }
 
 /*blockquotes*/

@@ -1,0 +1,21 @@
+//VARIABLES
+$headerFont:;
+$bodyFont:;
+$gold: #F4BA48;
+$palegold: #ECC98D;
+$darkgold: #A7884D;
+$offblack: #181818;
+$darkgrey: #2B2B2B;
+
+//MIXINS
+@mixin sansSerif($size) {
+	color: $gold;
+	font-size: $size;
+	font-family:; //same
+	font-weight:; //same
+	letter-spacing:; //same
+} //use for h1, h3 and h4
+
+// @mixin serif() {
+
+// } //use for h2

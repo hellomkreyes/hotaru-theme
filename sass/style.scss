@@ -8,6 +8,8 @@
 */
 
 @import 'normalize';
+@import 'concise';
+@import 'utility';
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
@@ -18,6 +20,11 @@
 Default Styling
 ====================================
 */
+
+html {
+	font-size: 10px; //pixel fallback for rem
+	font-size: 62.5%;
+}
 
 img {
 	max-width: 100%;
@@ -41,11 +48,3 @@ body {
 .full {
 	width: 100%;
 }
-
-
-
-
-
-
-
-
