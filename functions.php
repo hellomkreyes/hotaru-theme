@@ -46,6 +46,8 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,400italic');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -175,6 +177,16 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	$footerWidgets = array(
+		'name' => 'Footer Widget Area 💁',
+		'id' => 'footer-widget-area',
+		'before_widget' => '<div class="footer-column">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>'
+	);
+
+	register_sidebar($footerWidgets);
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
@@ -275,4 +287,14 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+/* returns svg code for Hotaru theme logo */
+function get_logo() {
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g><path d="M150,74.7L150,74.7L150,74.7L150,74.7l-68.3,50.7l2.6,84.9l45.7-32.4l20,36.4l19.3-36.9l1.3-2.4l-1.6,2.2l-17.3-12.3
+		l-2-24.2l-1.6,24.6l-17.7,12.6l-1.6-2.2l-1.3-2.4l15.4-10.9l3.9-57.5l0,0l2.7-6.2l2.7,6.1h-0.5h0.5L157,162l15,10.6l-2.5,4.8
+		l46.5,33l2.6-84.9L150,74.7L150,74.7z M112.2,145.5l15.1,27.6l-38,27L87.2,128l57-42.3L112.2,145.5z M212.8,128l-2.2,72.1
+		l-38.9-27.6l14.5-27.8l-31-59.2L212.8,128z"/><path d="M150,6.9C71.1,6.9,6.9,71.1,6.9,150S71.1,293.1,150,293.1S293.1,228.9,293.1,150S228.9,6.9,150,6.9z M150,282.4
+		C77,282.4,17.6,223,17.6,150S77,17.6,150,17.6S282.4,77,282.4,150S223,282.4,150,282.4z"/></g></svg>';
 }

@@ -1,7 +1,10 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+	<div class="wrapper">
+		<?php dynamic_sidebar('footer-widget-area'); ?>
+		<div class="footer-copyright">
+			<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - Powered By <a href="http://wordpress.org">WordPress</a></h6>
+		</div>
+	</div>
 </footer>
 
 <script>
