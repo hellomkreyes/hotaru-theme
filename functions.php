@@ -76,6 +76,14 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+    'smoothscroll', //handle
+    get_template_directory_uri() . '/js/smoothscroll.js', //source
+    array('jquery'), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
@@ -291,7 +299,7 @@ function get_post_parent($post) {
 
 /* returns svg code for Hotaru theme logo */
 function get_logo() {
-	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	return '<svg version="1.1" id="hotaru-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g><path d="M150,74.7L150,74.7L150,74.7L150,74.7l-68.3,50.7l2.6,84.9l45.7-32.4l20,36.4l19.3-36.9l1.3-2.4l-1.6,2.2l-17.3-12.3
 		l-2-24.2l-1.6,24.6l-17.7,12.6l-1.6-2.2l-1.3-2.4l15.4-10.9l3.9-57.5l0,0l2.7-6.2l2.7,6.1h-0.5h0.5L157,162l15,10.6l-2.5,4.8
 		l46.5,33l2.6-84.9L150,74.7L150,74.7z M112.2,145.5l15.1,27.6l-38,27L87.2,128l57-42.3L112.2,145.5z M212.8,128l-2.2,72.1

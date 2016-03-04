@@ -1,3 +1,4 @@
+<!--THIS IS FOR THE LANDING PAGE-->
 <?php 
 
 /*
@@ -7,7 +8,6 @@
 get_header(); ?>
 
 <?php $imageURL = hackeryou_get_thumbnail_url($post); ?>
-
 <header style="background-image: url(<?php echo $imageURL ?>);">
 	<div class="wrapper">
 		<?php // Start the loop ?>
@@ -17,13 +17,13 @@ get_header(); ?>
 			<?php the_content(); ?>
 
 		<?php endwhile; // end the loop?>
-		<div class="header-button-container">
+		<a href="#features" class="smoothScroll"><div class="header-button-container">
 		  <i class="fa fa-chevron-down"></i>
-		</div>
+		</div></a>
 	</div>
 </header>
 <!--HARD CODED FEATURES SECTION-->
-<section class="features">
+<section id="features" class="features">
 	<div class="wrapper">
 		<h2>Illuminate your content</h2>
 		<h4>with the elegant hotaru theme</h4>

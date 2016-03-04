@@ -1,9 +1,13 @@
+//TYPOGRAPHY
+//font-family: Montserrat, sans-serif; (400)
+//font-family: Playfair Display, serif; (400, 400i)
+
 //VARIABLES
-$headerFont:;
-$bodyFont:;
+$headerFont: 'Montserrat', sans-serif;
+$bodyFont: 'Playfair Display', serif;
 $gold: #F4BA48;
-$palegold: #ECC98D;
-$darkgold: #A7884D;
+$palegold: #ECC98D; //for use in dark version
+$darkgold: #A7884D; //for use in light version
 $offblack: #181818;
 $darkgrey: #2B2B2B;
 
@@ -11,11 +15,15 @@ $darkgrey: #2B2B2B;
 @mixin sansSerif($size) {
 	color: $gold;
 	font-size: $size;
-	font-family:; //same
-	font-weight:; //same
-	letter-spacing:; //same
+	font-family: $headerFont;
+	font-weight: 400;
+	text-transform: uppercase;
+	// letter-spacing: ;
 } //use for h1, h3 and h4
 
-// @mixin serif() {
-
-// } //use for h2
+@mixin serif($color, $size) {
+	color: $color;
+	font-size: $size;
+	font-family: $bodyFont;
+	font-weight: 400;
+} //use for h2

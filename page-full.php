@@ -1,3 +1,4 @@
+<!--THIS IS FOR FULL PAGE TEMPLATE NO SIDEBAR-->
 <?php
 
 /*
@@ -8,7 +9,7 @@ get_header();  ?>
 
 <!--CODE FOR THE HERO IMAGE - BASED ON SET FEATURED IMAGE-->
 <?php $imageURL = hackeryou_get_thumbnail_url($post); ?>
-<section class="featured-image" style="background-image: url(<?php echo $imageURL ?>);">
+<section class="featured-image  sticky-top" style="background-image: url(<?php echo $imageURL ?>);">
 </section>
 
 <!--CODE FOR THE BODY CONTENT-->

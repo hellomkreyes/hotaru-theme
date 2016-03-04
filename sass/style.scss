@@ -9,8 +9,8 @@
 
 @import 'normalize';
 @import 'concise';
-@import 'utility';
-@import 'typography';
+// @import 'utility';
+// @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
@@ -32,6 +32,7 @@ img {
 
 body {
 	color: #333;
+	position: relative;
 }
 
 .container {

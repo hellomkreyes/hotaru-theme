@@ -7,9 +7,9 @@ a {
 }
 
 /* headings */
-// h1 {
-// 	@include sansSerif();	
-// }
+h1 {
+	@include sansSerif(7rem);
+}
 
 // h2 {
 // 	@include serif();

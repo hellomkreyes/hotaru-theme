@@ -1,14 +1,31 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
-	li {
-		display: inline;
-		margin-right: 10px;
-		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+nav.main-nav {
+	position: relative;
+	background: grey;
+	z-index: 10;
+	#hotaru-logo {
+		max-width: 100%;
+		width: 4%;
+		fill: gold;
+	}
+	ul.menu {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+			margin-right: 10px;
+			a {
+				color: #333;
+				padding: 10px;
+				background: #333;
+				color: white;
+			}
 		}
 	}
+}
+
+nav.main-nav-scrolled {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
 }

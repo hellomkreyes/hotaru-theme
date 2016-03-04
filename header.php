@@ -11,9 +11,9 @@
 </head>
 
 
-<body <?php body_class(); ?>>
+<body id="pageTop" <?php body_class(); ?>>
 
-<nav>
+<nav class="main-nav">
     <?php echo get_logo(); ?>
     <?php wp_nav_menu( array(
       'container' => false,
