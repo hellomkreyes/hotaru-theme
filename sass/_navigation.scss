@@ -1,11 +1,13 @@
 nav.main-nav {
-	position: relative;
-	background: grey;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
 	z-index: 10;
 	#hotaru-logo {
 		max-width: 100%;
 		width: 4%;
-		fill: gold;
+		fill: $gold;
 	}
 	ul.menu {
 		margin: 0;
@@ -13,11 +15,18 @@ nav.main-nav {
 		li {
 			display: inline;
 			margin-right: 10px;
+			border-bottom: solid 1px transparent;
+			transition: all 0.45s ease-in-out;
+			&:hover a {
+				border-bottom: solid 1px $gold;
+			}
 			a {
-				color: #333;
+				@include sansSerif(white, 1rem);
 				padding: 10px;
-				background: #333;
-				color: white;
+				transition: all 0.45s ease-in-out;
+				&:hover {
+					color: $gold;
+				}
 			}
 		}
 	}
@@ -25,6 +34,7 @@ nav.main-nav {
 
 nav.main-nav-scrolled {
 	position: fixed;
+	background: $offblack;
 	width: 100%;
 	top: 0;
 	right: 0;

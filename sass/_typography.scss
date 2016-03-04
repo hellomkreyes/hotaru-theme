@@ -8,16 +8,16 @@ a {
 
 /* headings */
 h1 {
-	@include sansSerif(7rem);
+	@include sansSerifHeader(4rem);
 }
 
 // h2 {
 // 	@include serif();
 // }
 
-// h3 {
-// 	@include sansSerif();
-// }
+h3 {
+	@include sansSerifHeader(2rem);
+}
 
 // h4 {
 // 	@include sansSerif();
@@ -35,9 +35,9 @@ h1 {
 
 p {
 	line-height: 1.5;
-	color:;//white
-	font-family:;//playfair display
-	font-size:;//12-13pt
+	// color:;//white
+	// font-family:;//playfair display
+	// font-size:;//12-13pt
 }
 
 /*blockquotes*/

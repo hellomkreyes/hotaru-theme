@@ -9,8 +9,8 @@
 
 @import 'normalize';
 @import 'concise';
-// @import 'utility';
-// @import 'typography';
+@import 'utility';
+@import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
@@ -28,6 +28,11 @@ html {
 
 img {
 	max-width: 100%;
+}
+
+svg {
+	max-width: 100%;
+	width: 150px;
 }
 
 body {

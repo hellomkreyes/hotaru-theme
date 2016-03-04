@@ -47,7 +47,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,400italic');
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat|Lato:300');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
