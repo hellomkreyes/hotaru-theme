@@ -136,7 +136,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">Read More <i class="fa fa-chevron-right"></i></a>';
 }
 
 /**
@@ -297,4 +297,12 @@ function get_logo() {
 		l46.5,33l2.6-84.9L150,74.7L150,74.7z M112.2,145.5l15.1,27.6l-38,27L87.2,128l57-42.3L112.2,145.5z M212.8,128l-2.2,72.1
 		l-38.9-27.6l14.5-27.8l-31-59.2L212.8,128z"/><path d="M150,6.9C71.1,6.9,6.9,71.1,6.9,150S71.1,293.1,150,293.1S293.1,228.9,293.1,150S228.9,6.9,150,6.9z M150,282.4
 		C77,282.4,17.6,223,17.6,150S77,17.6,150,17.6S282.4,77,282.4,150S223,282.4,150,282.4z"/></g></svg>';
+}
+
+/* hackeryou_get_thumbnail_url - Return current post thumbnail url */
+
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID);
+	$imageURL = wp_get_attachment_URL($imageID);
+	return $imageURL;
 }
