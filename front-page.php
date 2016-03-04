@@ -1,7 +1,7 @@
 <?php 
 
 /*
-	Template Name: Hotaru Front Page, with hero image
+	Template Name: Hotaru Front Page
 */
 
 get_header(); ?>

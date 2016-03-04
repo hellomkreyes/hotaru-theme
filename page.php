@@ -1,24 +1,43 @@
 <?php get_header();  ?>
 
-<div class="main">
-  <div class="container">
+<!--CODE FOR THE HERO IMAGE - BASED ON SET FEATURED IMAGE-->
+<?php $imageURL = hackeryou_get_thumbnail_url($post); ?>
+<section class="featured-image" style="background-image: url(<?php echo $imageURL ?>);">
+</section>
 
-    <div class="content">
+<!--CODE FOR THE BODY CONTENT-->
+<section class="page">
+  <div class="wrapper">
+    <div class="page-side-container">
+<!--START OF LOOP-->
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-        <h2><?php 
-          $title = get_the_title(); //get() only retrieves info. store in a variable
-          echo $title; //echo prints the variable value onto the page
-          ?></h2>
-        <?php the_content(); ?>
-
+        <h3> <?php the_title(); ?> </h3>
+        <div class="page post-details">
+          <h4> Posted by <?php the_author(); ?> on
+            <?php the_date('M d, Y'); ?>
+          </h4>
+        </div>
+        <div class="header-line"></div>
+        <div class="post-content">
+          <?php the_content(); ?>
+        </div>
+        <div class="post-nav">
+          <div class="prev-link">
+            <h4> <?php previous_post_link(); ?> </h4>
+          </div>
+          <div class="next-link">
+            <h4> <?php next_post_link(); ?> </h4>
+          </div>
+        </div>
       <?php endwhile; // end the loop?>
-    </div> <!-- /,content -->
-
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+<!--END OF LOOP-->
+    </div>
+<!--CODE FOR THE SIDEBAR WIDGETS-->
+    <aside class="sidebar">
+      <?php get_sidebar(); ?>
+    </aside>
+  </div>
+</section>
 
 <?php get_footer(); ?>
