@@ -8,10 +8,14 @@
 */
 
 @import 'normalize';
+@import 'grid';
 @import 'concise';
 @import 'utility';
 @import 'typography';
 @import 'navigation';
+@import 'heroes';
+@import 'frontpage';
+
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -36,21 +40,34 @@ svg {
 }
 
 body {
-	color: #333;
+	background: $offblack;
+	color: white;
 	position: relative;
 }
 
-.container {
+.wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 }
 
-.full {
-	width: 100%;
-}
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
+
+// .full {
+// 	width: 100%;
+// }

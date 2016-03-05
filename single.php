@@ -3,10 +3,10 @@
 
 <!--CODE FOR THE HERO IMAGE - BASED ON SET FEATURED IMAGE-->
 <?php $imageURL = hackeryou_get_thumbnail_url($post); ?>
-<section class="featured-image  sticky-top" style="background-image: url(<?php echo $imageURL ?>);">
+<section class="featured-image" style="background-image: url(<?php echo $imageURL ?>);">
 </section>
 
-<div class="main">
+<div class="main sticky-top">
   <div class="container">
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

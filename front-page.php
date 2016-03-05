@@ -10,23 +10,27 @@ get_header(); ?>
 <?php $imageURL = hackeryou_get_thumbnail_url($post); ?>
 <header style="background-image: url(<?php echo $imageURL ?>);">
 	<div class="wrapper">
-		<?php // Start the loop ?>
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<!--find a way to make this not hard-coded-->
-			<h1>Hotaru</h1>
-			<?php the_content(); ?>
+		<div class="hero-content">
+			<?php // Start the loop ?>
+			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<!--find a way to make this not hard-coded-->
+				<h1>Hotaru</h1>
+				<?php the_content(); ?>
 
-		<?php endwhile; // end the loop?>
-		<a href="#features" class="smoothScroll"><div class="header-button-container">
-		  <i class="fa fa-chevron-down"></i>
-		</div></a>
+			<?php endwhile; // end the loop?>
+		</div>
+	</div>
+	<div class="header-button-container">
+		<a href="#features" class="smoothScroll">
+	  		<i class="fa fa-chevron-down"></i>
+		</a>
 	</div>
 </header>
 <!--HARD CODED FEATURES SECTION-->
 <section id="features" class="features">
 	<div class="wrapper">
 		<h2>Illuminate your content</h2>
-		<h4>with the elegant hotaru theme</h4>
+		<h4>with the elegant <span>hotaru</span> theme</h4>
 		<ul class="features--container">
 			<li>
 				<div class="icon-container">
@@ -56,7 +60,8 @@ get_header(); ?>
 	</div>
 </section>
 <!--HARD CODED ABOUT INTRO SECTION-->
-<section class="about">
+
+<section id="front-about" class="about" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/images/sparkles.jpg);" >
 	<div class="wrapper">
 		<div class="logo-container">
 			<?php echo get_logo(); ?>

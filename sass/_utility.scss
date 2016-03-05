@@ -7,7 +7,7 @@
 $headerFont: 'Montserrat', sans-serif;
 $skinnyFont: 'Lato', sans-serif;
 $bodyFont: 'Playfair Display', serif;
-$gold: #F4BA48;
+$gold: #F4BA48; //accent colour
 $palegold: #ECC98D; //for use in dark version
 $darkgold: #A7884D; //for use in light version
 $offblack: #181818;
@@ -20,7 +20,7 @@ $darkgrey: #2B2B2B;
 	font-family: $headerFont;
 	font-weight: 400;
 	text-transform: uppercase;
-	// letter-spacing: ;
+	letter-spacing: 0.2rem;
 } //use for h1, h3 and h4
 
 @mixin sansSerif($color, $size) {
@@ -37,4 +37,4 @@ $darkgrey: #2B2B2B;
 	font-size: $size;
 	font-family: $bodyFont;
 	font-weight: 400;
-} //use for h2
+} //use for h2 & body

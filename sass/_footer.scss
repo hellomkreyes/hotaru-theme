@@ -1,3 +1,7 @@
 footer {
-	clear: both;
+	// clear: both;
+	@include column(12);
+	#footer-copyright {
+		@include column(3);
+	}
 }

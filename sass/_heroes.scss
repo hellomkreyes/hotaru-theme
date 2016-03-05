@@ -1,0 +1,43 @@
+header {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	border: 20px solid black;
+	background: linear-gradient(rgba(0,0,0, 1));
+	background: center no-repeat fixed;
+	background-size: cover;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	.wrapper {
+		margin: 25rem auto 0;
+		// padding-top: 20rem;
+		.hero-content {
+			width: 40%;
+			text-align: left;
+		}
+		p {
+			@include serif(white, 0.8rem);
+		}
+	}
+	.header-button-container {
+		// background: black;
+		text-align: center;
+		position: relative;
+		flex: 1 0 100%;
+		margin: auto;
+		bottom: 0;
+		a i {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+section.featured-image {
+	height: 50vh;
+	background: linear-gradient(
+		rgba(0,0,0, 1),
+		rgba(0,0,0, 1));
+	background: center no-repeat fixed;
+	background-size: cover;
+}
