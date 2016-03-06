@@ -50,3 +50,11 @@ $smview: 480px;
 	font-family: $bodyFont;
 	font-weight: 400;
 } //use for h2 & body
+
+@mixin italicSerif($color, $size) {
+	color: $color;
+	font-size: $size;
+	font-family: $bodyFont;
+	font-style: italic;
+	font-weight: 400;
+}

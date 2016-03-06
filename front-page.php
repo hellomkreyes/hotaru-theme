@@ -31,16 +31,16 @@ get_header(); ?>
 	<div class="wrapper">
 		<h2>Illuminate your content</h2>
 		<h4>with the elegant <span>hotaru</span> theme</h4>
-		<ul class="features--container">
+		<ul class="features--container clearfix">
 			<li>
 				<div class="icon-container">
-					<i class="fa fa-paint-brush"></i>
+					<i class="fa fa-pencil"></i>
 				</div>
 				<p>Custom Made</p>
 			</li>
 			<li>
 				<div class="icon-container">
-					<i class="fa fa-glass"></i>
+					<i class="fa fa-diamond"></i>
 				</div>
 				<p>Sophisticated</p>
 			</li>
@@ -67,9 +67,11 @@ get_header(); ?>
 			<?php echo get_logo(); ?>
 		</div>
 		<div class="about-container">
-			<p>Suitable for all kinds of content, learn how this theme can help you make your website shine.</p>
-			<!--specifically link to the about page-->
-			<a href=" <?php echo esc_url( get_permalink( get_page_by_title('About'))); ?> " class="learn-more">Learn More</a>
+			<div class="about-inner-container">
+				<p>Suitable for all kinds of content, learn how this theme can help you make your website shine.</p>
+				<!--specifically link to the about page-->
+				<a href=" <?php echo esc_url( get_permalink( get_page_by_title('About'))); ?> " class="learn-more">Learn More</a>
+			</div>
 		</div>
 	</div>
 </section>

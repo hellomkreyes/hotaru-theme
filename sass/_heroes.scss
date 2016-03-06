@@ -38,10 +38,10 @@ header {
 }
 
 section.featured-image {
-	height: 50vh;
-	background: linear-gradient(
-		rgba(0,0,0, 1),
-		rgba(0,0,0, 1));
-	background: center no-repeat fixed;
+	height: 70vh;
+	// background: linear-gradient(
+	// 	rgba(0,0,0, 1),
+	// 	rgba(0,0,0, 1));
+	background: bottom fixed no-repeat;
 	background-size: cover;
 }

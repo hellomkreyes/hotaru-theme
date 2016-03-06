@@ -3,10 +3,10 @@ a {
 	color: white;
 	transition: all 0.45s ease-in-out;
 	&:hover {
-		color: $gold !important;
+		color: $gold;
 	}
 	&:active {
-		color: $gold !important;
+		color: $gold;
 	}
 	&:visited {
 		color: white;

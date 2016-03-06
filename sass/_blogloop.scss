@@ -1,0 +1,42 @@
+.featured-blogs {
+	.wrapper {
+		padding: 2rem;
+		ul {
+			@include column(12);
+			li.blog-thumbnail {
+				@include column(4);
+			}
+			li.blog-excerpt {
+				@include column(8);
+				height: 200px;
+				text-align: left;
+				background: $darkgrey;
+				h3, h4, p {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+li.blog-excerpt {
+	h3 a {
+		color: $darkgold;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			color: $gold;
+		}
+	}
+	.post-details-container {
+		display: flex;
+		h4 {
+			margin: 0 1rem;
+			color: $gold;
+		}
+	}
+	p {
+		font-size: 0.9rem;
+		line-height: 1.8;
+	}
+}

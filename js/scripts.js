@@ -12,11 +12,9 @@ app.sectionheight = $('.sticky-top').height();
 console.log(app.sectionheight);
 //stores height of hero image section in about, contact & entry pages
 
-//VARIABLES FOR HAMBURGER NAV
-
-
 //INIT FUNCTION WITH EVENT TRIGGERS
 app.init = function() {
+//EVENT LISTENER FOR ALTERNATING NAV ON SCROLL
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() > app.headerheight) {
 			$('nav').addClass('scroll');
@@ -31,6 +29,7 @@ app.init = function() {
 			$('.footer-button-container').hide();
 		}
 	});
+//EVENT LISTENER FOR HAMBURGER NAV & CHANGING BG
 	$('.menu-btn').on('click', function(event) {
 		event.preventDefault;
 		$('.bar').toggleClass('animate');

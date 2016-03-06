@@ -1,0 +1,33 @@
+.error-logo svg {
+	fill: $gold;
+}
+
+.error-page {
+	.wrapper {
+		margin-top: 7rem;
+		.error-container {
+			padding: 0 2.5rem;
+			h1 {
+				padding: 2rem 0;
+			}
+			input[type="search"] {
+				padding: 0 1rem;
+				border-radius: 0%;
+				background: $darkgrey;
+				border: 0.1px solid $darkgold;
+				@include italicSerif(white, 1rem);
+				text-transform: lowercase;
+				letter-spacing: 0.1rem;
+			}
+			input[type="submit"] {
+				margin: 1rem 0;
+				color: $darkgrey;
+				background: $darkgold;
+				transition: all 0.45s ease-in-out;
+				&:hover {
+					background: $gold;
+				}
+			}
+		}
+	}
+}

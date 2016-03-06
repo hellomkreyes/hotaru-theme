@@ -1,11 +1,92 @@
+//STATIC FEATURES IN FRONT-PAGE.PHP
+
 #features {
 	padding: 3rem;
 	span {
 		color: $gold;
 	}
+	ul {
+		padding: 2rem 0 5rem;
+		@include column(12);
+		li {
+			@include column(3);
+			display: flex;
+			flex-direction: column;
+			p {
+				margin: 1.5rem 0;
+				font-size: 1.2rem;
+				letter-spacing: 0.8px;
+			}
+			@media (max-width: $mdview) {
+				@include column(6);
+				padding: 0 0 2rem;
+			}
+			@media (max-width: $smview) {
+				@include column(12);
+				padding: 0 0 2rem;
+			}
+		}
+	}
+}
+
+.icon-container {
+	border: 3px solid $darkgold;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	display: flex;
+	margin: auto;
+	i {
+		font-size: 4rem;
+		margin: auto;
+		color: $palegold;
+	}
+}
+
+li:nth-child(3) .icon-container i {
+	font-size: 5rem;
+}
+
+#features .wrapper {
+	h4 {
+		@media (max-width: $smview) {
+			margin: 2rem 0;
+		}
+	}
 }
 
 #front-about {
+	clear: both;
 	background: center no-repeat;
 	background-size: cover;
+	.wrapper {
+		display: flex;
+		justify-content: space-around;
+		.logo-container {
+			svg {
+				fill: $gold;
+			}
+		}
+		.about-container {
+			display: flex;
+			flex-direction: column;
+			.about-inner-container {
+				margin: auto;
+				text-align: left;
+				p {
+					font-size: 1.1rem;
+				}
+				a {
+					padding: 0.8rem 2.5rem;
+					background: $darkgold;
+					transition: all 0.45s ease-in-out;
+					color: $darkgrey;
+					&:hover {
+						background: $gold;
+						color: $darkgrey;
+					}
+				}
+			}
+		}
+	}
 }
