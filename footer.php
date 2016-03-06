@@ -2,13 +2,13 @@
 	<div class="wrapper">
 		<?php dynamic_sidebar('footer-widget-area'); ?>
 	</div>
-	<div class="footer-copyright">
-		<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - Powered By <a href="http://wordpress.org">WordPress</a></h6>
-	</div>
 	<div class="footer-button-container"><a href="#pageTop" class="smoothScroll">
 		<i class="fa fa-chevron-up"></i>
 	</a></div>
 </footer>
+<div class="footer-copyright">
+	<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - Powered By <a href="http://wordpress.org">WordPress</a></h6>
+</div>
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

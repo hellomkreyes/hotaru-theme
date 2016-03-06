@@ -1,0 +1,25 @@
+.blog-page {
+	margin-top: 10rem;
+	.wrapper {
+		.blog-content{
+			@include column(8);
+			img.wp-post-image {
+			max-width: 100%;
+			height: auto !important;
+			}
+		}
+	}
+}
+
+.entry-details-container {
+	display: flex;
+	border-bottom: 0.5px solid $darkgold;
+	margin: 0 0 3rem;
+	padding: 2rem 0;
+	.entry-details {
+		text-align: right;
+	}
+	.entry-content {
+		text-align: left;
+	}
+}

@@ -77,7 +77,7 @@ get_header(); ?>
 </section>
 <!--THE BIG MOFO BLOG POST LOOP-->
 <section class="featured-blogs">
-	<div class="wrapper">
+	<div class="wrapper clearfix">
 		<ul>
 		<?php $blogQuery = new WP_Query( 
 			array(

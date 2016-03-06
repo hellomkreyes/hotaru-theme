@@ -13,13 +13,12 @@
 <!--START OF LOOP-->
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-        <h3> <?php the_title(); ?> </h3>
+        <h1> <?php the_title(); ?> </h1>
         <div class="page post-details">
           <h4> Posted by <?php the_author(); ?> on
             <?php the_date('M d, Y'); ?>
           </h4>
         </div>
-        <div class="header-line"></div>
         <div class="post-content">
           <?php the_content(); ?>
         </div>
@@ -35,9 +34,7 @@
 <!--END OF LOOP-->
     </div>
 <!--CODE FOR THE SIDEBAR WIDGETS-->
-    <aside class="sidebar">
       <?php get_sidebar(); ?>
-    </aside>
   </div>
 </section>
 

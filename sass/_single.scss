@@ -1,10 +1,10 @@
-.content {
+.page-side-container, .content {
 	@include column(8);
 	text-align: left;
 	h1 {
 		font-size: 3.5rem;
 	}
-	.entry-meta {
+	.entry-meta, .post-details {
 		@include sansSerif($palegold, 1rem);
 		border-bottom: 0.5px solid $gold;
 		padding: 1rem 0;
@@ -53,4 +53,9 @@
 	@media (max-width: $mdview) {
 		@include column(12);
 	}
+}
+
+.post-details h4 {
+	margin: 2rem 0;
+	color: $palegold;
 }

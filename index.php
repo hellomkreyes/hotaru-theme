@@ -4,13 +4,11 @@
 <?php get_header(); ?>
 
 <section class="blog-page sticky-top">
-	<div class="wrapper">
+	<div class="wrapper clearfix">
 		<div class="blog-content">
 			<?php get_template_part( 'loop', 'index' );	?>
 		</div>
-		<aside class="sidebar">
-			<?php get_sidebar(); ?>
-		</aside>
+		<?php get_sidebar(); ?>
 	</div>
 </section>
 
