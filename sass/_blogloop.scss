@@ -15,28 +15,52 @@
 					margin: 0;
 					padding: 0;
 				}
+				border-bottom: 0.5px solid $darkgold;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			@media (max-width: 870px) {
+				li.blog-thumbnail {
+					display: none;
+				}
+				li.blog-excerpt {
+					@include column(12);
+					clear: both;
+					height: inherit;
+				}
 			}
 		}
 	}
 }
 
 li.blog-excerpt {
+	padding: 1.5rem;
+	display: flex;
 	h3 a {
-		color: $darkgold;
+		color: $gold;
 		transition: all 0.45s ease-in-out;
 		&:hover {
-			color: $gold;
+			color: $palegold;
 		}
 	}
 	.post-details-container {
 		display: flex;
 		h4 {
-			margin: 0 1rem;
-			color: $gold;
+			margin: 1rem 1rem;
+			color: $darkgold;
+		}
+		h4#post-date {
+			padding-left: 2rem;
 		}
 	}
 	p {
 		font-size: 0.9rem;
 		line-height: 1.8;
+		i {
+			color: $gold;
+			font-size: 1rem;
+			margin-top: 0.35rem;
+		}
 	}
 }

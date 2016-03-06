@@ -66,6 +66,9 @@ li:nth-child(3) .icon-container i {
 			svg {
 				fill: $gold;
 			}
+			@media (max-width: $mdview) {
+				padding: 0 1rem 0 0;
+			}
 		}
 		.about-container {
 			display: flex;
@@ -86,6 +89,9 @@ li:nth-child(3) .icon-container i {
 						color: $darkgrey;
 					}
 				}
+			}
+			@media (max-width: $smview) {
+				padding: 0 0.5rem;
 			}
 		}
 	}

@@ -98,7 +98,7 @@ get_header(); ?>
 			            	</a></h3>
 			            <div class="post-details-container">
 			            	<h4><?php the_author(); ?></h4>
-			            	<h4><?php the_date('M d, Y'); ?></h4>
+			            	<h4 id="post-date"><?php the_date('M d, Y'); ?></h4>
 			            </div>
 		            	<p><?php the_excerpt(); ?></p>
 		            </li>
