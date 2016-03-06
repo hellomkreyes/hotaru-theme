@@ -7,7 +7,7 @@
 </section>
 
 <div class="main sticky-top">
-  <div class="container">
+  <div class="wrapper clearfix">
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -45,7 +45,7 @@
 
     <?php get_sidebar(); ?>
 
-  </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

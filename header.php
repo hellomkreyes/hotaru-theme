@@ -14,7 +14,7 @@
 <body id="pageTop" <?php body_class(); ?>>
 
 <nav class="main-nav">
-    <?php echo get_logo(); ?>
+    <a href=" <?php echo esc_url( get_permalink( get_page_by_title('Home'))); ?> "><?php echo get_logo(); ?></a>
     <?php wp_nav_menu( array(
       'container' => false,
       'theme_location' => 'primary'

@@ -181,8 +181,8 @@ function hackeryou_widgets_init() {
 		'description' => 'The primary widget area',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 
 	$footerWidgets = array(

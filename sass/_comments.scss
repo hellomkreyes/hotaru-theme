@@ -5,8 +5,7 @@
 h3 {
 	&#comments-title, &#reply-title {
 		color: #000000;
-		font-weight: 700;
-		font-size: 20px;
+		@include sansSerif($gold, 1.5rem);
 		margin-bottom: 0;
 	}
 	&#comments-title {
@@ -224,4 +223,31 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
 	margin: 0;
+}
+
+#commentform {
+	p.logged-in-as {
+		margin: 1rem 0;
+		letter-spacing: 0.05rem;
+	}
+	p.comment-form-comment label {
+		@include sansSerif($gold, 1rem);
+		margin: 1.5rem 0 0.5rem;
+	}
+	#comment {
+		padding: 1rem;
+		background: $darkgrey;
+		border: 0.1px solid $darkgold;
+		@include serif(white, 1rem);
+		letter-spacing: 0.1rem;
+	}
+	#submit {
+		margin: 1rem 0;
+		color: $darkgrey;
+		background: $darkgold;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			background: $gold;
+		}
+	}
 }

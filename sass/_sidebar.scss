@@ -1,4 +1,66 @@
 .sidebar {
-	width: 30%;
-	float: left;
+	@include column(4);
+	text-align: left;
+	padding: 2rem 2rem 0;
+	h4{
+		color: $gold;
+		margin: 5rem 0 1.5rem;
+		@media (max-width: $mdview) {
+			margin: 2rem 0;
+		}
+	}
+	input#s {
+		padding: 0 1rem;
+		border-radius: 0%;
+		background: $darkgrey;
+		border: 0.1px solid $darkgold;
+		@include italicSerif(white, 1rem);
+		text-transform: lowercase;
+		letter-spacing: 0.1rem;
+		width: 90%;
+	}
+	input.searchsubmit {
+		margin: 1rem 0;
+		color: $darkgrey;
+		background: $darkgold;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			background: $gold;
+		}
+	}
+	li a {
+		@include serif(white, 1.2rem);
+		letter-spacing: 0.1rem;
+	}
+	#tag_cloud-2 {
+		.tagcloud a {
+			display: inline-block;
+			@include serif($palegold, 0.8rem);
+			text-transform: lowercase;
+			background: $darkgrey;
+			padding: 0.25rem 1rem;
+			margin: 0.5rem;
+			transition: all 0.45s ease-in-out;
+			&:hover {
+				background: $darkgold;
+				color: white;
+			}
+		}
+	}
+	#categories-2 {
+		.cat-item {
+			margin: 0.5rem 0;
+		}
+		.cat-item a {
+			@include serif(white, 1.2rem);
+			letter-spacing: 0.1rem;
+		}
+	}
+	@media (max-width: $mdview) {
+		@include column(12);
+		margin: 0;
+		border-bottom: 0.5px solid $darkgold;
+		border-top: 0.5px solid $darkgold;
+		padding: 3rem;
+	}
 }

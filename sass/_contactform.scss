@@ -1,0 +1,24 @@
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea {
+	background: $darkgrey;
+	border: 0.5px solid $darkgold;
+}
+
+#wpcf7-f63-p2-o1 {
+	form {
+		margin: 3rem 0 0;
+		p {
+			text-align: left;
+			@include sansSerif($gold, 1rem);
+		}
+	}
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+	background: $darkgold;
+	transition: all 0.45s ease-in-out;
+	color: $offblack;
+	font-weight: 400;
+	&:hover {
+		background: $gold;
+	}
+}

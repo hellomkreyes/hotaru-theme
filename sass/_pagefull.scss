@@ -1,0 +1,72 @@
+section.single-body {
+	position: relative;
+}
+
+section.single-body .wrapper{
+	position: relative;
+	background: $offblack;
+	top: -3.5rem;
+	@media (max-width: $lgview) {
+		position: inherit;
+		top: 0;
+	}
+}
+
+.single-container {
+	border: 0.5px solid $gold;
+	padding: 2rem 4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.single-details-container {
+	margin: 0 auto 2rem;
+	display: flex;
+	border-bottom: 1px solid $gold;
+	justify-content: space-between;
+	width: 40%;
+	h4 {
+		color: $palegold;
+		margin: 2rem 0 1rem;
+		@media (max-width: $smview) {
+			margin: 1rem 0;
+		}
+	}
+	@media (max-width: $lgview) {
+		width: 70%;
+	}
+	@media (max-width: $smview) {
+		display: block;
+	}
+}
+
+.post-content {
+	text-align: left;
+	margin: 3rem 0;
+	p {
+		line-height: 2;
+		letter-spacing: 0.5px;
+	}
+}
+
+.post-nav {
+	display: flex;
+	justify-content: space-between;
+	h4 {
+		margin: 3rem 0;
+		transition: all 0.45s ease-in-out;
+		font-size: 1.5rem;
+		&:hover {
+			color: $gold;
+		}
+		a {
+			transition: all 0.45s ease-in-out;
+			&:hover {
+				color: $gold;
+			}
+		}
+	}
+	@media (max-width: $smview) {
+		display: block;
+	}
+}

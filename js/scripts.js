@@ -36,6 +36,8 @@ app.init = function() {
 		$('.mobile-nav-container').slideToggle();
 		$('.mobile-nav').toggleClass('mobile-bg');
 	});
+//GET RID OF INLINE STYLES IN TAG-CLOUD WIDGET
+	$('.tagcloud a').attr('style', '');
 };
 
 //DOC READY AND INIT FUNCTION

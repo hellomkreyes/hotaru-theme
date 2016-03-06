@@ -1,0 +1,56 @@
+.content {
+	@include column(8);
+	text-align: left;
+	h1 {
+		font-size: 3.5rem;
+	}
+	.entry-meta {
+		@include sansSerif($palegold, 1rem);
+		border-bottom: 0.5px solid $gold;
+		padding: 1rem 0;
+		margin: 0 0 2.5rem;
+		a {
+			color: $palegold;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	.entry-content {
+		p {
+			line-height: 2;
+			letter-spacing: 0.5px;
+		}
+	}
+	.entry-utility {
+		margin: 2rem 0;
+		@include sansSerif($darkgold, 1rem);
+		a {
+			color: $darkgold;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	#nav-below {
+		display: flex;
+		justify-content: space-between;
+		p {
+			margin: 3rem 0;
+			transition: all 0.45s ease-in-out;
+			@include sansSerif($gold, 1.2rem);
+			&:hover {
+				color: $gold;
+			}
+			a {
+				transition: all 0.45s ease-in-out;
+				&:hover {
+					color: $gold;
+				}
+			}
+		}
+	}
+	@media (max-width: $mdview) {
+		@include column(12);
+	}
+}

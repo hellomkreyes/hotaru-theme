@@ -12,6 +12,10 @@ nav.main-nav, nav.mobile-nav {
 		max-width: 100%;
 		width: 60px;
 		fill: $gold;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			fill: white;
+		}
 	}
 	ul.menu {
 		margin: 0;
@@ -37,7 +41,7 @@ nav.main-nav, nav.mobile-nav {
 			}
 			@media (max-width: $mdview) {
 				text-align: center;
-				margin: 3rem 0;
+				margin: 2rem 0;
 			}
 		}
 		@media (max-width: $mdview) {
