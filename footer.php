@@ -2,12 +2,12 @@
 	<div class="wrapper">
 		<?php dynamic_sidebar('footer-widget-area'); ?>
 	</div>
-	<div id="footer-copyright">
+	<div class="footer-copyright">
 		<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - Powered By <a href="http://wordpress.org">WordPress</a></h6>
 	</div>
-	<a href="#pageTop" class="smoothScroll"><div class="footer-button-container">
+	<div class="footer-button-container"><a href="#pageTop" class="smoothScroll">
 		<i class="fa fa-chevron-up"></i>
-	</div></a>
+	</a></div>
 </footer>
 
 <script>

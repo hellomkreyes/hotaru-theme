@@ -12,19 +12,30 @@ app.sectionheight = $('.sticky-top').height();
 console.log(app.sectionheight);
 //stores height of hero image section in about, contact & entry pages
 
-//THIS IS THE EVENT TRIGGER ON SCROLL
+//VARIABLES FOR HAMBURGER NAV
+
+
+//INIT FUNCTION WITH EVENT TRIGGERS
 app.init = function() {
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() > app.headerheight) {
 			$('nav').addClass('scroll');
 			$('nav').css('padding', '20px 50px');
+			$('.footer-button-container').show();
 		// } else if ($(this).scrollTop() > app.sectionheight) {
 		// 	$('nav').addClass('scroll');
 		// 	$('nav').css('padding', '20px');
 		} else if ($(this).scrollTop() === 0) {
 			$('nav').removeClass('scroll');
 			$('nav').css('padding', '50px 50px 20px');
+			$('.footer-button-container').hide();
 		}
+	});
+	$('.menu-btn').on('click', function(event) {
+		event.preventDefault;
+		$('.bar').toggleClass('animate');
+		$('.mobile-nav-container').slideToggle();
+		$('.mobile-nav').toggleClass('mobile-bg');
 	});
 };
 

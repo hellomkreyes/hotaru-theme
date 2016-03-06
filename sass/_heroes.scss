@@ -15,6 +15,10 @@ header {
 		.hero-content {
 			width: 40%;
 			text-align: left;
+			@media (max-width: 600px) {
+				width: 100%;
+				text-align: center;
+			}
 		}
 		p {
 			@include serif(white, 0.8rem);

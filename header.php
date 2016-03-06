@@ -20,3 +20,16 @@
       'theme_location' => 'primary'
     )); ?>
 </nav><!--/.nav-->
+
+<nav class="mobile-nav">
+  <?php echo get_logo(); ?>
+  <div class="menu-btn">
+    <div class="bar"></div>
+  </div>
+  <div class="mobile-nav-container">
+    <?php wp_nav_menu( array(
+    'container' => false,
+    'theme_location' => 'primary'
+    )); ?>
+  </div>
+</nav>

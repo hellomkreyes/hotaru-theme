@@ -8,6 +8,9 @@ a {
 	&:active {
 		color: $gold !important;
 	}
+	&:visited {
+		color: white;
+	}
 }
 
 /* headings */
@@ -28,13 +31,13 @@ h4 {
 	margin: 2rem;
 }
 
-// h5 {
-// 	@include sansSerif();
-// }
+h5 {
+	@include sansSerif(white, 0.8rem);
+}
 
-// h6 {
-// 	@include sansSerif();
-// }
+h6 {
+	@include sansSerif(white, 0.6rem);
+}
 
 /* paragraphs */
 
@@ -46,7 +49,7 @@ p {
 /*blockquotes*/
 
 blockquote {
-	background: #F7F7F7;
+	background: $darkgrey;
 	margin: 0;
 	padding: 20px;
 	p {

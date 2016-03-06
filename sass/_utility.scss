@@ -12,6 +12,9 @@ $palegold: #ECC98D; //for use in dark version
 $darkgold: #A7884D; //for use in light version
 $offblack: #181818;
 $darkgrey: #2B2B2B;
+$lgview: 980px;
+$mdview: 768px;
+$smview: 480px;
 
 //MIXINS
 @mixin sansSerifHeader($size) {
@@ -22,6 +25,15 @@ $darkgrey: #2B2B2B;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 } //use for h1, h3 and h4
+
+@mixin sansSerifBold($color, $size) {
+	color: $color;
+	font-size: $size;
+	font-family: $headerFont;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+} //use for other things
 
 @mixin sansSerif($color, $size) {
 	color: $color;

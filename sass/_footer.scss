@@ -1,7 +1,68 @@
 footer {
-	// clear: both;
+	clear: both;
+	position: relative;
 	@include column(12);
-	#footer-copyright {
-		@include column(3);
+	.footer-column {
+		@include column(4);
+		text-align: left;
+		padding: 0 2rem;
+		p {
+			@include serif(white, 0.8rem);
+		}
+		a {
+			@include serif(white, 0.9rem);
+		}
+		h4 {
+			@include sansSerif($gold, 1rem);
+			margin: 2rem 0rem;
+		}
+		li {
+			padding: 0rem 0 0.5rem;
+		}
+		@media (max-width: $mdview) {
+			@include column(12);
+			padding: 0 2rem 0.5rem;
+			p {
+				font-size: 1rem;
+			}
+			li {
+				padding: 0 0 1.5rem;
+				li:last-child {
+					padding: 0;
+				}
+			}
+		}
+	}
+	.footer-copyright {
+		clear: both;
+		text-align: center;
+		padding: 2.5rem 0 0;
+	}
+	.footer-button-container {
+		display: none;
+		width: 3rem;
+		height: 3rem;
+		display: inline-block;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		i {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+footer .footer-column .menu-social-links-container {
+	ul {
+		@include column(12);
+		li {
+			@include column(2);
+			border-radius: 50%;
+			display: flex;
+			transition: all 0.45s ease-in-out;
+			a i {
+				font-size: 1.8rem;
+			}
+		}
 	}
 }
