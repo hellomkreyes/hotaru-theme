@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
+  <link type="image/svg" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.png" rel="icon">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>

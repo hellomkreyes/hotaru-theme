@@ -29,6 +29,9 @@
 	.entry-content {
 		text-align: left;
 	}
+	@media (max-width: $smview) {
+		display: block;
+	}
 }
 
 .entry-details h4, .entry-details p{

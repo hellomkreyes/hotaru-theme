@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php // Start the loop ?>
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<!--find a way to make this not hard-coded-->
-				<h1>Hotaru</h1>
+				<h1 class="title">Hotaru</h1>
 				<?php the_content(); ?>
 
 			<?php endwhile; // end the loop?>

@@ -11,7 +11,9 @@ header {
 	position: relative;
 	.wrapper {
 		margin: 25rem auto 0;
-		// padding-top: 20rem;
+		@media (max-width: 400px) {
+			margin: 12rem auto 0;
+		}
 		.hero-content {
 			width: 40%;
 			text-align: left;

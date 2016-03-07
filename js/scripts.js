@@ -11,6 +11,11 @@ console.log(app.headerheight);
 app.sectionheight = $('.sticky-top').height(); 
 console.log(app.sectionheight);
 //stores height of hero image section in about, contact & entry pages
+// app.fade = 35;
+//measure for parallax fade
+// app.heroHeight = $('.hero-content').height();
+//calculation for parallax fade point
+// app.fadePoint = (app.fade / 100) * app.heroHeight - $('header .wrapper').height();
 
 //INIT FUNCTION WITH EVENT TRIGGERS
 app.init = function() {
@@ -20,14 +25,20 @@ app.init = function() {
 			$('nav').addClass('scroll');
 			$('nav').css('padding', '20px 50px');
 			$('.footer-button-container').show();
-		// } else if ($(this).scrollTop() > app.sectionheight) {
-		// 	$('nav').addClass('scroll');
-		// 	$('nav').css('padding', '20px');
 		} else if ($(this).scrollTop() === 0) {
 			$('nav').removeClass('scroll');
 			$('nav').css('padding', '50px 50px 20px');
 			$('.footer-button-container').hide();
 		}
+		//parallax effect THAT I CANT FIGURE OUT
+		// $('.hero-content').css({
+  //     		'transform': 'translate(0px, ' + $(this).scrollTop() * 1.5 + 'px)'
+  //   	});
+		// if ($(this).scrollTop() > app.fadePoint) {
+		// 	$('.hero-content').fadeOut();
+		// } else if ($(this).scrollTop() < app.fadePoint) {
+		// 	$('.hero-content').fadeIn();
+		// }
 	});
 //EVENT LISTENER FOR HAMBURGER NAV & CHANGING BG
 	$('.menu-btn').on('click', function(event) {

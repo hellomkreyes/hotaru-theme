@@ -5,12 +5,16 @@
 			@include column(12);
 			li.blog-thumbnail {
 				@include column(4);
+				max-width: 100%;
+				height: auto !important;
+				// width: 50%;
 			}
 			li.blog-excerpt {
 				@include column(8);
 				height: 200px;
 				text-align: left;
 				background: $darkgrey;
+				// width: 50%;
 				h3, h4, p {
 					margin: 0;
 					padding: 0;

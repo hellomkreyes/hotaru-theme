@@ -3,6 +3,9 @@
 	text-align: left;
 	h1 {
 		font-size: 3.5rem;
+		@media (max-width: 400px) {
+			font-size: 3rem;
+		}
 	}
 	.entry-meta, .post-details {
 		@include sansSerif($palegold, 1rem);
