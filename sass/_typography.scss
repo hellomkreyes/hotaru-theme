@@ -3,7 +3,7 @@ a {
 	color: white;
 	transition: all 0.45s ease-in-out;
 	&:hover {
-		color: $gold;
+		color: $gold !important;
 	}
 	&:active {
 		color: $gold;

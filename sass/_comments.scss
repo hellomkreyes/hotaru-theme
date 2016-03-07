@@ -250,4 +250,37 @@ p.form-allowed-tags, .nocomments {
 			background: $gold;
 		}
 	}
+	p.comment-form-author label {
+		@include sansSerif($gold, 1rem);
+		margin: 1.5rem 0 0.5rem;
+	}
+	#author {
+		padding: 1rem;
+		background: $darkgrey;
+		border: 0.1px solid $darkgold;
+		@include serif(white, 1rem);
+		letter-spacing: 0.1rem;
+	}
+	p.comment-form-email label {
+		@include sansSerif($gold, 1rem);
+		margin: 1.5rem 0 0.5rem;
+	}
+	#email {
+		padding: 1rem;
+		background: $darkgrey;
+		border: 0.1px solid $darkgold;
+		@include serif(white, 1rem);
+		letter-spacing: 0.1rem;
+	}
+	p.comment-form-url label {
+		@include sansSerif($gold, 1rem);
+		margin: 1.5rem 0 0.5rem;
+	}
+	#url {
+		padding: 1rem;
+		background: $darkgrey;
+		border: 0.1px solid $darkgold;
+		@include serif(white, 1rem);
+		letter-spacing: 0.1rem;
+	}
 }
