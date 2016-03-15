@@ -1,0 +1,18 @@
+.tag-page {
+	margin-top: 10rem;
+	.wrapper {
+		.tag-content{
+			@include column(8);
+			img.wp-post-image {
+			max-width: 100%;
+			height: auto !important;
+			}
+			@media (max-width: $mdview) {
+				@include column(12);
+				article:last-child .entry-details-container {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.category-page {
+	margin-top: 10rem;
+	.wrapper {
+		.category-content{
+			@include column(8);
+			h1 {
+				text-align: left;
+			}
+			// text-align: left;
+			img.wp-post-image {
+			max-width: 100%;
+			height: auto !important;
+			}
+			@media (max-width: $mdview) {
+				@include column(12);
+				article:last-child .entry-details-container {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

@@ -1,25 +1,26 @@
 <?php get_header(); ?>
-<div class="main">
-	<div class="container">
 
-		<div class="content">
-			<?php if ( have_posts() ) : ?>
+<section class="search-page sticky-top">
+	<div class="wrapper clearfix">
+		
+	<div class="content">
+		<?php if ( have_posts() ) : ?>
 
-				<h1>Search Results for: <?php echo get_search_query(); ?></h1>
-				<?php get_template_part( 'loop', 'search' ); ?>
+			<h1>Search Results for: <?php echo get_search_query(); ?></h1>
+			<?php get_template_part( 'loop', 'search' ); ?>
 
-			<?php else : ?>
+		<?php else : ?>
 
-				<h2>Nothing Found</h2>
-				<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-				<?php get_search_form(); ?>
+			<h2>Welcome to Nothingness</h2>
+			<p>Nothing matched your search criteria. To escape, please try some different keywords.</p>
+			<?php get_search_form(); ?>
 
-			<?php endif; ?>
-		</div> <!-- /.content -->
+		<?php endif; ?>
+	</div> <!-- /.content -->
 
-		<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 
-	</div><!-- /.container -->
-</div> <!-- /.main -->
+	</div>
+</section>
 
 <?php get_footer(); ?>

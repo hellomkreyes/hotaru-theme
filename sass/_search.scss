@@ -1,0 +1,43 @@
+.search-page {
+	margin-top: 10rem;
+	.wrapper {
+		.content{
+			@include column(8);
+			img.wp-post-image {
+			max-width: 100%;
+			height: auto !important;
+			}
+			@media (max-width: $mdview) {
+				@include column(12);
+				article:last-child .entry-details-container {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+.content p {
+	margin: 2rem 0;
+}
+
+input#s {
+	padding: 0 1rem;
+	border-radius: 0%;
+	background: $darkgrey;
+	border: 0.1px solid $darkgold;
+	@include italicSerif(white, 1rem);
+	text-transform: lowercase;
+	letter-spacing: 0.1rem;
+	width: 90%;
+}
+
+input.searchsubmit {
+	margin: 1rem 0;
+	color: $darkgrey;
+	background: $darkgold;
+	transition: all 0.45s ease-in-out;
+	&:hover {
+		background: $gold;
+	}
+}

@@ -1,16 +1,17 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<section class="tag-page sticky-top">
+	<div class="wrapper clearfix">
+		<div class="tag-content">
+			
+		  <h1>Tag: <?php single_tag_title(); ?></h1>
+		  <?php get_template_part( 'loop', 'tag' ); ?>
 
-    <div class="content">
-      <h1>Tag Archives: <?php single_tag_title(); ?></h1>
-      <?php get_template_part( 'loop', 'tag' ); ?>
-    </div> <!-- /.content -->
+		</div>
 
-    <?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 
-  </div><!-- /.container -->
-</div><!-- /.main -->
+	</div>
+</section>
 
 <?php get_footer(); ?>

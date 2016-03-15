@@ -56,8 +56,9 @@ li:nth-child(3) .icon-container i {
 }
 
 #front-about {
+	padding: 3rem;
 	clear: both;
-	background: center no-repeat;
+	background: center no-repeat fixed;
 	background-size: cover;
 	.wrapper {
 		display: flex;
