@@ -7,7 +7,7 @@
 	</a></div>
 </footer>
 <div class="footer-copyright">
-	<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - Powered By <a href="http://wordpress.org">WordPress</a></h6>
+	<h6>Hotaru Theme by <a href="http://hellomkreyes.com" target="_blank">M.K. Reyes</a> - <span class="copyright-wordpress">Powered By <a href="http://wordpress.org">WordPress</a></span></h6>
 </div>
 
 <script>

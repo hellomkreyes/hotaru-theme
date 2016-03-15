@@ -17,6 +17,9 @@ section.single-body .wrapper{
 	padding: 2rem 4rem;
 	display: flex;
 	flex-direction: column;
+	@media (max-width: $smview) {
+		padding: 2rem;
+	}
 	@media (max-width: 400px) {
 		h1 {
 			font-size: 3rem;
@@ -61,6 +64,9 @@ section.single-body .wrapper{
 		margin: 3rem 0;
 		transition: all 0.45s ease-in-out;
 		font-size: 1.5rem;
+		@media (max-width: $ipod4) {
+			font-size: 1rem;
+		}
 		&:hover {
 			color: $gold;
 		}
@@ -70,8 +76,5 @@ section.single-body .wrapper{
 				color: $gold;
 			}
 		}
-	}
-	@media (max-width: $smview) {
-		display: block;
 	}
 }

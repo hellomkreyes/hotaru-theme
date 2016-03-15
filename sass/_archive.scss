@@ -6,6 +6,9 @@
 			h1 {
 				text-align: left;
 				font-size: 3rem;
+				@media (max-width: $nexus4) {
+					font-size: 2rem;
+				}
 			}
 			img.wp-post-image {
 			max-width: 100%;

@@ -4,6 +4,12 @@ footer {
 	padding-bottom: 3rem;
 	@include column(12);
 	.footer-column {
+		&:nth-child(even) {
+			text-align: center;
+			@media (max-width: $mdview) {
+				text-align: left;
+			}
+		}
 		@include column(4);
 		text-align: left;
 		padding: 0 2rem;
@@ -67,4 +73,13 @@ footer .footer-column .menu-social-links-container {
 	text-align: center;
 	padding: 1rem;
 	background: $darkgrey;
+	@media (max-width: $mdview) {
+		text-align: left;
+	}
+	@media (max-width: $smview) {
+		text-align: center;
+		span.copyright-wordpress {
+			display: block;
+		}
+	}
 }

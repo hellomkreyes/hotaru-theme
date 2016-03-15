@@ -3,6 +3,12 @@
 	.wrapper {
 		.content{
 			@include column(8);
+			h1 {
+				text-align: left;
+				@media (max-width: $nexus4) {
+					font-size: 2rem;
+				}
+			}
 			img.wp-post-image {
 			max-width: 100%;
 			height: auto !important;

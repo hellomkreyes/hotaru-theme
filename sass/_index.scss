@@ -3,6 +3,12 @@
 	.wrapper {
 		.blog-content{
 			@include column(8);
+			h1 {
+				text-align: left;
+				@media (max-width: $nexus4) {
+					font-size: 2rem;
+				}
+			}
 			img.wp-post-image {
 			max-width: 100%;
 			height: auto !important;
@@ -25,12 +31,18 @@
 	.entry-details {
 		text-align: left;
 		padding-top: 1.5rem;
+		@media (max-width: $smview) {
+			padding-top: 0;
+		}
 	}
 	.entry-content {
 		text-align: left;
+		@media (max-width: $smview) {
+			padding-top: 1.5rem;
+		}
 	}
 	@media (max-width: $smview) {
-		display: block;
+		flex-direction: column-reverse;
 	}
 }
 
@@ -46,6 +58,9 @@
 
 .entry-content h3 a {
 	color: $gold;
+	@media (max-width: $smview) {
+		font-size: 1.8rem;
+	}
 }
 
 .entry-content p a i.fa.fa-chevron-right {
